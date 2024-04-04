@@ -1,12 +1,14 @@
 {
-  "name": "app",
+  "name": "basics",
   "version": "1.0.0",
-  "description": "",
+  "description": "type script basics",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ts"
+  ],
+  "author": "Kewal Khondekar",
   "license": "ISC"
 }
