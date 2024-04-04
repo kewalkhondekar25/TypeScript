@@ -36,6 +36,6 @@ const runResult = runAfter1s;
 //     setTimeout(fn, 1000);
 // };
 // runAfter1s(() => {
-//     console.log("hello");
+//     console.log("hello world");
 //     return 0;
 // })
