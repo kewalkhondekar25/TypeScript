@@ -21,6 +21,7 @@ interface User {
     name: string,
     email: string,
     age: number,
+    contactNo?: number  //optional agrument
 };
 
 const isLegal = (user: User) => {
@@ -46,5 +47,6 @@ console.log(result);
 greet({
     name: "john",
     email: "john@gmail.com",
-    age: 20
+    age: 20,
+    contactNo: 9876543210
 });
