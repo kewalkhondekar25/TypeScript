@@ -1,0 +1,14 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "understanding interfaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "Kewal Khondekar",
+  "license": "ISC"
+}
