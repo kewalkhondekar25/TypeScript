@@ -50,3 +50,27 @@ greet({
     age: 20,
     contactNo: 9876543210
 });
+
+interface Info{
+    id: string,
+    count: number
+};
+
+const sumOfCount = (props1: Info, props2: Info) => {
+    return props1.count + props2.count
+};
+
+const response = sumOfCount(
+    {
+        id: "asd23ad",
+        count: 1
+    },
+    {
+        id: "e34fsdf",
+        count: 68
+    }
+);
+console.log(response);
+
+
+
