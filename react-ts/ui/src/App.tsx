@@ -1,5 +1,6 @@
 import './App.css'
 import Interface from './Components/Interface'
+import UnionTypes from './Components/UnionTypes'
 
 function App() {
   return (
