@@ -1,0 +1,15 @@
+{
+  "name": "pick",
+  "version": "1.0.0",
+  "description": "ts pick",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "pick"
+  ],
+  "author": "Kewal Khondekar",
+  "license": "ISC"
+}
