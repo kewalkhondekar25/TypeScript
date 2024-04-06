@@ -5,9 +5,9 @@ function App() {
   return (
     <div>
       <Interface
-      name="john"
-      email="john@gmail.com"
-      age={23}/>
+        name="john"
+        email="john@gmail.com"
+        age={23}/>
     </div>
   )
 }
