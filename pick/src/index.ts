@@ -1,4 +1,3 @@
-//pick
 interface User {
     name: string,
     email: string,
@@ -7,7 +6,9 @@ interface User {
     isSkilled: boolean
 };
 
+//pick
 type updateProps = Pick<User, "name" | "empId" | "isSkilled">
+//partial
 type updatePropsOptional = Partial<updateProps>
 
 // const updateUser = (updateProps: updateProps) => {
@@ -17,5 +18,4 @@ const updateUser = (updateProps: updatePropsOptional) => {
     //update props
 };
 
-//partial
 
