@@ -5,7 +5,8 @@ interface Copy {
     author: string;
     genre?: string;
     printAuthor(): void;
-    printTitle(message: string): string
+    printTitle(message: string): string;
+    printSomething: (someValue: number) => number
 }
 
 const atomicHabit: Copy = {
@@ -18,6 +19,9 @@ const atomicHabit: Copy = {
     },
     printTitle(message){
         return `${this.author} ${message}`
+    },
+    printSomething: (someValue) => {
+        return someValue
     }
 };
 
