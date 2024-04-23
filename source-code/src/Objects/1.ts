@@ -16,5 +16,7 @@ let notebook = {
 }
 
 // let items: {title: string; cost: number}[] = [book, pen, notebook]
-let items: {title: string; cost?: number}[] = [book, pen, notebook]
+let items: {readonly title: string; cost?: number}[] = [book, pen, notebook];
+// items[0].title = "asd"
+
 
