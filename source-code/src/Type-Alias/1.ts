@@ -1,5 +1,5 @@
 // type alias
-type User = {id: number; name: string; isPass: boolean};
+export type User = {id: number; name: string; isPass: boolean};
 
 const john: User = {
     id: 22,
@@ -13,6 +13,6 @@ const susan: User = {
 };
 
 const showResult = (user: User): User => {
-        console.log(`Hi ${user.name} you are ${user.isPass ? "Passed":"Failed"}`);
-        return user
+    console.log(`Hi ${user.name} you are ${user.isPass ? "Passed":"Failed"}`);
+    return user;
 };
