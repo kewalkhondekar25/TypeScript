@@ -12,3 +12,5 @@ let dogObj = JSON.parse(dogString);
 
 let birdResult = birdObj as Bird;
 let dogResult = dogObj as Bird;
+
+// console.log(birdResult.name);
