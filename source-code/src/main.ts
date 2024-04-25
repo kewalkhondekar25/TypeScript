@@ -5,6 +5,7 @@ import { setupCounter } from './counter.ts'
 import "./Type-Annotation/1.ts"
 import "./Union-Type/4.ts"
 import "./Type-Alias/4.ts"
+import "./Fetch-Data/1.ts"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
