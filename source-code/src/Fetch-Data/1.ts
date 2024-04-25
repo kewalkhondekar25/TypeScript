@@ -1,13 +1,17 @@
-const url = "https://vegan-meals-api.vercel.app/api/v1/meals"
+import { z } from "zod";
 
-interface Products {
-    _id: number;
-    category: string;
-    title: string;
-    description: string;
-    price: number;
-    __v: number
-}
+const url = "https://vegan-meals-api.vercel.app/api/v1/meals";
+
+const productSchema = z.object({
+    _id: z.number(),
+    category: z.string(),
+    title: z.string(),
+    description: z.string(),
+    price: z.number(),
+    __v: z.number()
+})
+
+type Products = z.infer<typeof productSchema>
 
 const fetchData = async (url: string): Promise<Products[]> => {
     try {
