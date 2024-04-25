@@ -10,7 +10,9 @@ function App() {
   return (
     <main>
       <Return/>
-      <Props name="john" id={69}/>
+      <Props name="john" id={69}>
+        <h5>hello world</h5>
+      </Props>
     </main>
   )
 }
