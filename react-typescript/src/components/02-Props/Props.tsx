@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Props = ({name, id}: {name: string; id: number}) => {
+interface ComponentProps {
+    name: string;
+    id: number
+}
+
+const Props = ({name, id}: ComponentProps) => {
   return (
     <div>
         <h3>{name}</h3>
