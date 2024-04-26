@@ -6,7 +6,7 @@ interface NavLinksType {
     text: string;
 };
 
-const navLinks = [
+const navLinks: NavLinksType[] = [
     {
         id: 1,
         link: "url",
@@ -29,6 +29,7 @@ const States = () => {
     const [num, setNum] = useState(1);
     const [products, setProducts] = useState<string[]>([]);
     const [links, setLinks] = useState<NavLinksType[]>(navLinks);
+    
   return (
     <div>
         <h3>count</h3>

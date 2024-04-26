@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import Return from './components/01-Return/Return'
 import Props from './components/02-Props/Props'
 import States from './components/03-States/States'
+import Events from './components/04-Events/Events'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Return/>
       <Props name="john" id={69}><h5>hello world</h5></Props>
       <States/>
+      <Events/>
     </main>
   )
 }
