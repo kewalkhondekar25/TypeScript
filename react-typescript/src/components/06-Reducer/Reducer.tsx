@@ -13,14 +13,14 @@ const ReducerFunc = () => {
       <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
         <button
         onClick={() => {
-            console.log("decrement");
-            
+          console.log("decrement");
+          dispatch({type: "decrement"})
         }}>-</button>
         <p>count: {state.count}</p>
         <button
         onClick={() => {
-            console.log("increment");
-            
+          console.log("increment");
+          dispatch({type: "increment"})  
         }}>+</button>
       </div>
     </div>
