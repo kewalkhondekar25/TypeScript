@@ -2,8 +2,8 @@ import React, { useContext, useState } from 'react'
 import { AppContext } from '../05-Context-API/Context';
 
 const Events = () => {
-    const msg = useContext(AppContext);
-    console.log(msg);
+    const context = useContext(AppContext);
+    console.log(context);
     
     const [text, setText] = useState<string>("");
     const [email, setEmail] = useState<string>("");
@@ -32,6 +32,14 @@ const Events = () => {
                 />   
             <button>Submit</button>
         </form>
+        <button
+        onClick={() => {
+          if(context?.theme === "dark"){
+            context.setTheme("system")
+            return;
+          }  
+          context?.setTheme("dark");
+        }}>{context?.theme}</button>
     </section>
   )
 }

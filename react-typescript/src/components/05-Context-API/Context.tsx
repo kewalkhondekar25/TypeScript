@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
 type ThemeState = {
-    theme: string,
+    theme: Theme,
     setTheme: (theme: Theme) => void
 }
 type ThemeProps = {
