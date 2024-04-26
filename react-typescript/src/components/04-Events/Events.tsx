@@ -2,8 +2,8 @@ import React, { useContext, useState } from 'react'
 import { AppContext } from '../05-Context-API/Context';
 
 const Events = () => {
-    const value = useContext(AppContext)
-    console.log(value);
+    const msg = useContext(AppContext);
+    console.log(msg);
     
     const [text, setText] = useState<string>("");
     const [email, setEmail] = useState<string>("");

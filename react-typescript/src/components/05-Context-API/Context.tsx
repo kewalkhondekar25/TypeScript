@@ -4,8 +4,8 @@ import React, { createContext } from "react";
 const AppContext = createContext<string | undefined>(undefined);
 
 //create provider
-const AppProvider = ({children}:{children: React.ReactNode}) => {
-  return <AppContext.Provider value={"hello"}>
+const AppProvider = ({children}: {children: React.ReactNode}) => {
+  return <AppContext.Provider value="hello world">
     {children}
   </AppContext.Provider>
 }
