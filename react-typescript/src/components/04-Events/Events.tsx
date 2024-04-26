@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { AppContext } from '../05-Context-API/Context';
 
 const Events = () => {
+    const value = useContext(AppContext)
+    console.log(value);
+    
     const [text, setText] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
