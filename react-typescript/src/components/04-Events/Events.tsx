@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 const Events = () => {
-    const [text, setText] = useState<string>();
-    const [email, setEmail] = useState<string>();
+    const [text, setText] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
     const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
     };
