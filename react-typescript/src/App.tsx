@@ -7,6 +7,7 @@ import Props from './components/02-Props/Props'
 import States from './components/03-States/States'
 import Events from './components/04-Events/Events'
 import { AppProvider } from './components/05-Context-API/Context'
+import ReducerFunc from "./components/06-Reducer/Reducer.tsx"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <States/>
       <Events/>
       </AppProvider>
+      <ReducerFunc/>
     </main>
   )
 }
