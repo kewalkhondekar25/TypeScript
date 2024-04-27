@@ -27,3 +27,7 @@ export const fetchMeals = async (): Promise<Meals[]> => {
 }
 
 fetchMeals();
+
+const appName: string = "react-typescript";
+
+appName
