@@ -1,22 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { type Products, productSchema } from './index';
 
-interface Products {
-    id: number;
-    title: string;
-    price: number;
-    description: string;
-    category: string;
-    image: string;
-    rating: {
-      rate: number;
-      count: number
-  }
-}
 
 const Fetch = () => {
 
   const [isLoading, setIsLoading] = useState(false);
-  const [products, setProducts] = useState<Products[]>();
+  const [products, setProducts] = useState<Products[]>([]);
 
   const fetchData = async () => {      
     setIsLoading(true);  
@@ -25,9 +14,14 @@ const Fetch = () => {
       if(!response.ok){
         throw new Error("Failed to fetch data")
       }
-      const rawData = await response.json();
-      setProducts(rawData);
-      console.log(rawData);
+      const rawData: Products[] = await response.json();
+      const result = productSchema.array().safeParse(rawData);
+      if(!result.data){
+        console.log(result.error.message);
+        throw new Error("failed to parse")
+      }
+      setProducts(result.data);
+      console.log(result.data);
       } catch (error) {
         const message = error instanceof Error? error.message : "there was an error";
         console.log(message);
