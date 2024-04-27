@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { type Products, productSchema } from './index';
-
+import { fetchMeals } from '../08-Axios/Axios';
 
 const Fetch = () => {
 
@@ -33,6 +33,7 @@ const Fetch = () => {
 
 useEffect(() => {
   fetchData();
+  fetchMeals();
 }, [])
 
     if(isLoading){
