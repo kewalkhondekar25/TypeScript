@@ -8,18 +8,20 @@ import States from './components/03-States/States'
 import Events from './components/04-Events/Events'
 import { AppProvider } from './components/05-Context-API/Context'
 import ReducerFunc from "./components/06-Reducer/Reducer.tsx"
+import Fetch from './components/07-Fetch/Fetch.tsx'
 
 function App() {
 
   return (
     <main>
       <AppProvider>
-      <Return/>
-      <Props name="john" id={69}><h5>hello world</h5></Props>
-      <States/>
-      <Events/>
+        <Return/>
+        <Props name="john" id={69}><h5>hello world</h5></Props>
+        <States/>
+        <Events/>
+        <ReducerFunc/>
+        <Fetch/>
       </AppProvider>
-      <ReducerFunc/>
     </main>
   )
 }
