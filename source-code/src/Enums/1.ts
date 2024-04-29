@@ -15,3 +15,15 @@ const getSErverResponse = (): ServerResponse => {
         date: ["sixty", "nine"]
     }
 };
+
+enum Status {
+    Departure,
+    Arrival
+};
+
+const getStatus = () => {
+    return {
+        flightNo: 123,
+        flightStatus: Status.Arrival
+    }
+}
