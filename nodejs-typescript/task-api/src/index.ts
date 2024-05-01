@@ -1,1 +1,1 @@
-console.log("ts added");
+console.log("nodemon ts added");
