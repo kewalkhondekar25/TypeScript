@@ -4,8 +4,6 @@ import router from "./routes/routes";
 dotenv.config({ path: __dirname + '/.env' });
 
 const app = express();
-// const port = 8080;
-
 
 app.get("/", (req, res) => {
   return res.json({message: "authentication"})
