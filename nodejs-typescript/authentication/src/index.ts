@@ -1,10 +1,16 @@
 import express from "express";
+import dotenv from "dotenv";
+import router from "./routes/routes";
+dotenv.config({ path: __dirname + '/.env' });
 
 const app = express();
-const port = 8080;
+// const port = 8080;
+
 
 app.get("/", (req, res) => {
-  return res.json({message: "hello world"})
+  return res.json({message: "authentication"})
 });
 
-app.listen(port, () => console.log(`server is listening on port: ${port}`))
+app.use("/api/v1", router);
+
+app.listen(process.env.PORT || 8080, () => console.log(`server is listening on port: ${process.env.PORT}`))
