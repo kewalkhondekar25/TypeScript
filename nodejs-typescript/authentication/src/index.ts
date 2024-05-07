@@ -8,8 +8,15 @@ app.use(express.json());
 
 app.use("/api/v1", router);
 
+console.log(process.env.PORT);
+
+
 app.get("/", (req, res) => {
   return res.json({message: "authentication"})
+});
+
+app.get("/healthy", (req, res) => {
+  return res.json({message: "server is healthy"})
 });
 
 
