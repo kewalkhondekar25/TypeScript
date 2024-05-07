@@ -15,20 +15,8 @@ const login = asyncHandler(async (req: express.Request, res: express.Response, n
 });
 
 const dashboard = asyncHandler(async(req: express.Request, res: express.Response) => {
-  console.log(req.headers);
-  const authHeader = req.headers.authorization;
   
-  
-  if(!authHeader || !authHeader.startsWith("Bearer ")){
-    return res.status(401).json({message: "no token provided"})
-  };
-  try {
-    const token = authHeader.split(" ")[1]
-    const decode = jwt.verify(token, process.env.JWT_SECRET)
-    return res.status(200).json({mesaage: "welcome to dashboard"})
-  } catch (error) {
-    res.status(401).json({message: "unathorized"})
-  }
+  return res.status(200).json({mesaage: "welcome to dashboard"});
 })
 
 export { login, dashboard };
